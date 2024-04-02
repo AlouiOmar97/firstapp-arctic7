@@ -1,4 +1,10 @@
 <app-nav></app-nav>
-test
-{{ title }}
+test <br>
+{{ title | uppercase | lowercase }} <br>
+{{ nb }}<br>
+{{ methodA() + 3 }}<br>
+<input type="text" [(ngModel)]="msg" >
+<button (click)="methodB()" [disabled]="x" class="btn btn-primary" >Test</button><br>
+{{ msg }}
+<app-residence></app-residence>
 <app-footer></app-footer>

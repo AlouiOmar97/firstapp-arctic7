@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  x= false
+  msg= ""
   title = 'firstapp ARCTIC7';
+  nb = 6
+  methodA(){
+    return 7
+  }
+  methodB(){
+    this.msg="This is a new Text"
+  }
 }
