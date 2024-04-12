@@ -1,3 +1,35 @@
-<p>residence works!</p>
-<ul> <li *ngFor="let residence of residencesList">{{residence.address}}</li>
+<h1>Residence List</h1>
+<div class="container">
+    <ul class="list-group"> 
+        <li class="list-group-item" *ngFor="let residence of residencesList">{{residence.name}} <a [routerLink]="['/residence/details/',residence.id]">Details</a>  </li>
+    </ul> <br>
+    <div class="col-12">
+        <select class="form-select" name="residence" id="residence" [(ngModel)]="selectedResidence" >
+            <option *ngFor="let residence of residencesList" [value]="residence.id"> {{residence.name}} </option>
+        </select>
+        <button (click)="displaySelectedAppartements()" class="btn btn-primary" >Display Appartements</button>
+    </div>
+    <p *ngIf="selectedResidence" > <b>Selected Residence : </b> {{ selectedResidence }} </p>
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let appartement of selectedAppartements"  > 
+            <div>
+                <p> <b>Terasse : </b> {{appartement.terrasse}} </p>
+                <p> <b>Surface : </b> {{appartement.surface}} </p>
+                <button class="btn btn-success" (click)="buyAppartement(appartement.id)" [disabled]="!appartement.status" >Buy</button>    
+            </div>
+        </li>
     </ul>
+    <br>
+    <label for="search">Search</label>
+    <input class="form-control" type="number" id="search" [(ngModel)]="searchSurface" >
+    <div>
+        <hr>
+        <div *ngFor="let appartement of appartementsList">
+            <div *ngIf="appartement.surface <= searchSurface">
+                <p> <b>Terasse : </b> {{appartement.terrasse}} </p>
+                <p> <b>Surface : </b> {{appartement.surface}} </p>
+                <button class="btn btn-success" (click)="buyAppartement(appartement.id)" [disabled]="!appartement.status" >Buy</button>    
+          <hr>  </div>
+        </div>
+    </div>
+</div>
