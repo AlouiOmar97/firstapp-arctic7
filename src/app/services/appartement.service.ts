@@ -9,6 +9,16 @@ import { Appartement } from '../core/models/appartement';
 export class AppartementService {
   appartementUrl="http://localhost:3000/appartement/"
   constructor(private http: HttpClient) { }
+  
+  getSameValueOf(list:any[], critiria:string, value:any){
+    let n = 0
+    for(let i in list){
+      if(list[i][critiria] === value){
+        n++
+      }
+    }
+    return n
+  }
 
   getAllAppartements(): Observable<Appartement[]>{
     return this.http.get<Appartement[]>(this.appartementUrl)

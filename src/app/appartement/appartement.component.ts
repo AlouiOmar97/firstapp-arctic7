@@ -16,7 +16,8 @@ export class AppartementComponent implements OnInit {
     
     this.appartementService.getAllAppartements().subscribe((data)=>{
       this.appartementList= data
-      console.log(data);
+      console.log("sum num surface   : "+this.appartementService.getSameValueOf(this.appartementList,"surface",420));
+
       
     })
 
