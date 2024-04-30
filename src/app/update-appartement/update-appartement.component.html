@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Update Appartement</h1>
+    <div *ngIf="updateAppartementForm">
+        <form [formGroup]="updateAppartementForm" >
+            <div class="row mb-3">
+              <label for="inputCategory3" class="col-sm-2 col-form-label">Category</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" formControlName="category" id="inputCategory3">
+                <div *ngIf="category!.touched && category!.errors?.['required']" class="alert alert-danger m-2">Category is required.</div>
+                <div *ngIf="category!.touched && category!.errors?.['minlength']" class="alert alert-danger m-2">Category must have at least 3 caracters.</div>
+                <div *ngIf="category!.touched && category!.errors?.['pattern']" class="alert alert-danger m-2">Category must have only lowercase letters.</div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputSurface3" class="col-sm-2 col-form-label">Surface</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" formControlName="surface" id="inputSurface3">
+                <div *ngIf="surface!.touched && surface!.errors?.['required']" class="alert alert-danger m-2">Surface is required.</div>
+      
+            </div>
+            </div>
+            <button type="submit" (click)="updateAppartement()" [disabled]="updateAppartementForm.invalid" class="btn btn-primary">Update</button>
+          </form>
+    </div>
+</div>

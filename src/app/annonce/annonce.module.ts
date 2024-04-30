@@ -16,6 +16,7 @@ import { ListAnnonceComponent } from './list-annonce/list-annonce.component';
   imports: [
     CommonModule,
     AnnonceRoutingModule
-  ]
+  ],
+  providers:[]
 })
 export class AnnonceModule { }

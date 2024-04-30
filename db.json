@@ -1,0 +1,154 @@
+{
+  "residence": [
+    {
+      "id": "1",
+      "name": "Residence 1 json",
+      "address": "Address 1",
+      "image": "https://www.seniortransition.fr/wp-content/uploads/2021/02/residence-senior-les-jardins-darcadie-le-mans.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Residence 2 json",
+      "address": "Address 2",
+      "image": "image 2"
+    },
+    {
+      "id": "3",
+      "name": "Residence 3 json",
+      "address": "Address 3",
+      "image": "image 3"
+    }
+  ],
+  "appartement": [
+    {
+      "id": "1",
+      "terrasse": "Terrasse 1",
+      "numAppart": 18,
+      "numEtage": 0,
+      "surface": 500,
+      "surfaceTerrasse": 250,
+      "category": "category 1",
+      "description": "appartement desc 1",
+      "status": true,
+      "residence": {
+        "id": 1,
+        "name": "Residence 1 json",
+        "address": "Address 1",
+        "image": "https://www.seniortransition.fr/wp-content/uploads/2021/02/residence-senior-les-jardins-darcadie-le-mans.jpg"
+      }
+    },
+    {
+      "id": "2",
+      "terrasse": "Terrasse 2",
+      "numAppart": 21,
+      "numEtage": 5,
+      "surface": 250,
+      "surfaceTerrasse": 250,
+      "category": "category 2",
+      "description": "appartement desc 2",
+      "status": false,
+      "residence": {
+        "id": 1,
+        "name": "Residence 1 json",
+        "address": "Address 1",
+        "image": "https://www.seniortransition.fr/wp-content/uploads/2021/02/residence-senior-les-jardins-darcadie-le-mans.jpg"
+      }
+    },
+    {
+      "id": "3",
+      "terrasse": "Terrasse 3",
+      "numAppart": 16,
+      "numEtage": 8,
+      "surface": 300,
+      "surfaceTerrasse": 250,
+      "category": "category 3",
+      "description": "appartement desc 3",
+      "status": true,
+      "residence": {
+        "id": 1,
+        "name": "Residence 1 json",
+        "address": "Address 1",
+        "image": "https://www.seniortransition.fr/wp-content/uploads/2021/02/residence-senior-les-jardins-darcadie-le-mans.jpg"
+      }
+    },
+    {
+      "id": "4",
+      "terrasse": "Terrasse 4",
+      "numAppart": 16,
+      "numEtage": 8,
+      "surface": 600,
+      "surfaceTerrasse": 250,
+      "category": "category 4",
+      "description": "appartement desc 4",
+      "status": true,
+      "residence": {
+        "id": 1,
+        "name": "Residence 1 json",
+        "address": "Address 1",
+        "image": "https://www.seniortransition.fr/wp-content/uploads/2021/02/residence-senior-les-jardins-darcadie-le-mans.jpg"
+      }
+    },
+    {
+      "id": "5",
+      "terrasse": "Terrasse 5",
+      "numAppart": 16,
+      "numEtage": 8,
+      "surface": 100,
+      "surfaceTerrasse": 250,
+      "category": "category 5",
+      "description": "appartement desc 5",
+      "status": true,
+      "residence": {
+        "id": 1,
+        "name": "Residence 1 json",
+        "address": "Address 1",
+        "image": "https://www.seniortransition.fr/wp-content/uploads/2021/02/residence-senior-les-jardins-darcadie-le-mans.jpg"
+      }
+    },
+    {
+      "id": "6",
+      "terrasse": "Terrasse 6",
+      "numAppart": 16,
+      "numEtage": 8,
+      "surface": 420,
+      "surfaceTerrasse": 260,
+      "category": "category 6",
+      "description": "appartement desc 6",
+      "status": true,
+      "residence": {
+        "id": 1,
+        "name": "Residence 1 json",
+        "address": "Address 1",
+        "image": "https://www.seniortransition.fr/wp-content/uploads/2021/02/residence-senior-les-jardins-darcadie-le-mans.jpg"
+      }
+    },
+    {
+      "id": "1c35",
+      "category": "abc",
+      "surface": 55,
+      "terrasse": "Terrasse 1",
+      "numAppart": 18,
+      "numEtage": 0,
+      "surfaceTerrasse": 250,
+      "description": "appartement desc 1",
+      "status": true,
+      "residence": {
+        "id": 1,
+        "name": "Residence 1 json",
+        "address": "Address 1",
+        "image": "https://www.seniortransition.fr/wp-content/uploads/2021/02/residence-senior-les-jardins-darcadie-le-mans.jpg"
+      }
+    },
+    {
+      "category": "abcaaaa",
+      "surface": 8888,
+      "id": "7c1b",
+      "residence": {
+        "id": 1,
+        "name": "Residence 1 json",
+        "address": "Address 1",
+        "image": "https://www.seniortransition.fr/wp-content/uploads/2021/02/residence-senior-les-jardins-darcadie-le-mans.jpg"
+      }
+    }
+  ]
+}

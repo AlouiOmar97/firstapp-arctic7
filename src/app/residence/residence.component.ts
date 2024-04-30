@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Residence } from '../core/models/residence';
 import { Appartement } from '../core/models/appartement';
+import { ResidenceService } from '../services/residence.service';
 
 @Component({
   selector: 'app-residence',
@@ -54,9 +55,12 @@ export class ResidenceComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor(private residenceService: ResidenceService) { }
 
   ngOnInit(): void {
+    this.residenceService.getAllResidences().subscribe((data)=>{
+      this.residencesList= data
+    })
   }
 
 }
