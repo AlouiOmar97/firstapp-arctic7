@@ -138,17 +138,18 @@
         "address": "Address 1",
         "image": "https://www.seniortransition.fr/wp-content/uploads/2021/02/residence-senior-les-jardins-darcadie-le-mans.jpg"
       }
+    }
+  ],
+  "voiture": [
+    {
+      "id": "2",
+      "marque": "BMW",
+      "date": 2008
     },
     {
-      "category": "abcaaaa",
-      "surface": 8888,
-      "id": "7c1b",
-      "residence": {
-        "id": 1,
-        "name": "Residence 1 json",
-        "address": "Address 1",
-        "image": "https://www.seniortransition.fr/wp-content/uploads/2021/02/residence-senior-les-jardins-darcadie-le-mans.jpg"
-      }
+      "id": "84c5",
+      "marque": "abc",
+      "date": 22
     }
   ]
 }

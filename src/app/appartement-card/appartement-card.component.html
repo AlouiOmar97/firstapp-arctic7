@@ -1,0 +1,10 @@
+<div class="card col-3 m-2" style="width: 18rem;">
+    <img [src]="appartement?.residence!.image" class="card-img-top" [alt]="appartement.residence.name">
+    <div class="card-body">
+      <h5 class="card-title">{{ appartement.terrasse }} </h5>
+      <p class="card-text"><b>Category : </b> {{ appartement.category }} </p>
+      <p class="card-text"><b>Surface : </b> {{ appartement.surface }} </p>
+      <a [routerLink]="['/appartement/details',appartement.id]" class="btn btn-primary">Details</a>
+      <a [routerLink]="['/appartement/update',appartement.id]" class="btn btn-warning m-1">Update</a>
+      <button (click)="deleteChild()" class="btn btn-danger">Delete</button>
+    </div>

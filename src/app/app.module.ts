@@ -16,6 +16,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppartementComponent } from './appartement/appartement.component';
 import { AppartementDetailsComponent } from './appartement-details/appartement-details.component';
 import { UpdateAppartementComponent } from './update-appartement/update-appartement.component';
+import { AppartementCardComponent } from './appartement-card/appartement-card.component';
+import { VoitureComponent } from './voiture/voiture.component';
+import { VoitureDetailsComponent } from './voiture-details/voiture-details.component';
+import { AddVoitureComponent } from './add-voiture/add-voiture.component';
+import { UpdateVoitureComponent } from './update-voiture/update-voiture.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import { UpdateAppartementComponent } from './update-appartement/update-appartem
     AddAppartementComponent,
     AppartementComponent,
     AppartementDetailsComponent,
-    UpdateAppartementComponent
+    UpdateAppartementComponent,
+    AppartementCardComponent,
+    VoitureComponent,
+    VoitureDetailsComponent,
+    AddVoitureComponent,
+    UpdateVoitureComponent
   ],
   imports: [
     BrowserModule,

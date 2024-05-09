@@ -1,0 +1,12 @@
+<div class="container">
+<h1>Voiture List</h1>
+<a routerLink="/voiture/add">Add voiture</a><hr>
+<div *ngFor="let v of voitureList">
+    <p><b>Marque : </b> {{ v.marque }} </p>
+    <p><b>Date : </b> {{ v.date }} </p> 
+    <a [routerLink]="['/voiture/update/',v.id]" class="btn btn-primary">Update</a>
+    <a [routerLink]="['/voiture/details/',v.id]" class="btn btn-warning">Details</a>
+    <button (click)="deleteVoiture(v.id)" class="btn btn-danger">Delete</button>
+    <hr>
+</div>
+</div>
